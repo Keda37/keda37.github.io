@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
-body {
+.body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: #000000; }
+  color: #000000;
+  background-color: #f8f9fa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto; }
 
 .info {
   max-width: 1220px;
@@ -111,7 +114,8 @@ body {
   max-width: 1220px;
   width: 100%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  overflow-x: hidden; }
   .work__wrapper {
     margin-top: 150px;
     display: -webkit-box;
@@ -171,5 +175,41 @@ body {
       font-weight: 300;
       line-height: 1.67;
       margin-top: 27px; }
+
+.contacts {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 152px;
+  padding-bottom: 83px; }
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 152px; }
+  .contacts__social {
+    width: calc(50% - 100px);
+    padding-top: 4px; }
+    .contacts__social-item {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 300;
+      color: #000;
+      margin-right: 40px; }
+  .contacts__copyright {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto; }
+  .contacts__email {
+    width: calc(50% - 100px);
+    text-align: right;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 4px; }
 
 /*# sourceMappingURL=style.css.map */
