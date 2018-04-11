@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Портфолио</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" id="style">
+
+<script>
+  var url = document.location.search,
+    theme = '?dark';
+
+if (url == theme) {
+  document.getElementById("style").href = "./css/style-dark.css"
+}
+</script>
 </head>
 <body class="body">
   <header class="info">

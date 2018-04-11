@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
+.body {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: #242628;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto; }
+
+.info {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 52px; }
+  .info__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0; }
+
+.navbar {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .navbar__item {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding-bottom: 19px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    display: block; }
+    .navbar__item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      bottom: 0;
+      height: 3px;
+      background-color: #000;
+      -webkit-transition: width .3s ease-in-out;
+      -o-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out; }
+    .navbar__item--active, .navbar__item--link {
+      color: #fff; }
+      .navbar__item--active:after, .navbar__item--link:after {
+        background-color: #fff; }
+    .navbar__item--work, .navbar__item--capability {
+      width: 275px; }
+    .navbar__item--contacts {
+      width: 170px; }
+    .navbar__item--link:hover:after {
+      width: 0; }
+
+.about {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px; }
+  .about__date {
+    width: 380px; }
+    .about__date-number {
+      font-size: 288px;
+      text-align: center;
+      font-weight: bold;
+      line-height: .76; }
+    .about__date-text {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 86px; }
+  .about__info {
+    width: 800px;
+    margin-left: auto; }
+  .about__title {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.33; }
+  .about__change-date {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 85px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .about__change-icon {
+    display: block;
+    margin-left: 3px;
+    margin-right: 15px; }
+    .about__change-icon svg {
+      width: 16px;
+      height: 16px;
+      fill: #000;
+      display: block; }
+
+.work {
+  margin-top: 133px;
+  padding-top: 20px;
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: hidden; }
+  .work__wrapper {
+    margin-top: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: auto;
+    width: 1260px;
+    margin-right: -73px; }
+  .work__item {
+    width: calc(33.3333% - 145px);
+    display: block;
+    margin-left: 72px;
+    margin-right: 73px;
+    margin-bottom: 84px;
+    text-decoration: none; }
+    .work__item-img {
+      display: block;
+      width: 100%;
+      height: 275px;
+      border-radius: 100%;
+      background: #fff;
+      margin-left: auto; }
+    .work__item-text {
+      max-width: 150px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.33;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 42px;
+      color: #fff; }
+
+.capability {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 48px;
+  padding-top: 20px; }
+  .capability__wrapper {
+    margin-top: 152px;
+    width: 800px;
+    margin-left: auto; }
+  .capability__item {
+    max-width: 590px;
+    margin-bottom: 82px; }
+    .capability__item-title {
+      font-size: 26px;
+      font-weight: 500;
+      margin: 0; }
+    .capability__item-text {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.67;
+      margin-top: 27px; }
+
+.contacts {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 152px;
+  padding-bottom: 40px; }
+  .contacts__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 152px; }
+  .contacts__social {
+    width: calc(50% - 100px);
+    padding-top: 4px; }
+    .contacts__social-item {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 300;
+      color: #fff;
+      margin-right: 40px;
+      position: relative; }
+      .contacts__social-item:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        width: 0;
+        bottom: 0;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        height: 1px;
+        background-color: #fff;
+        -webkit-transition: width .3s ease-in-out;
+        -o-transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out; }
+      .contacts__social-item:hover:after {
+        width: 100%; }
+  .contacts__copyright {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto; }
+  .contacts__data {
+    width: calc(50% - 100px);
+    padding-top: 4px;
+    text-align: right; }
+  .contacts__email {
+    color: #fff;
+    text-decoration: none;
+    position: relative; }
+    .contacts__email:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      width: 0;
+      bottom: 0;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      height: 1px;
+      background-color: #fff;
+      -webkit-transition: width .3s ease-in-out;
+      -o-transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out; }
+    .contacts__email:hover:after {
+      width: 100%; }
