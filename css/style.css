@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: #000000;
+  color: #000;
   background-color: #f8f9fa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto; }
@@ -59,9 +59,9 @@
       -o-transition: width .3s ease-in-out;
       transition: width .3s ease-in-out; }
     .navbar__item--active, .navbar__item--link {
-      color: #000000; }
+      color: #000; }
       .navbar__item--active:after, .navbar__item--link:after {
-        background-color: #000000; }
+        background-color: #000; }
     .navbar__item--work, .navbar__item--capability {
       width: 275px; }
     .navbar__item--contacts {
@@ -98,21 +98,23 @@
     font-size: 42px;
     font-weight: 500;
     line-height: 1.33; }
-  .about__today-number {
+  .about__change-date {
     font-size: 18px;
     font-weight: 300;
     margin-top: 85px;
     position: relative;
-    padding-left: 35px; }
-    .about__today-number:before {
-      content: '';
-      position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .about__change-icon {
+    display: block;
+    margin-left: 3px;
+    margin-right: 15px; }
+    .about__change-icon svg {
       width: 16px;
       height: 16px;
-      background: url("../image/ic_refresh_24px.svg") center no-repeat;
-      border-radius: 100%;
-      left: 3px;
-      top: 0; }
+      fill: #adb5bd;
+      display: block; }
 
 .work {
   margin-top: 133px;
@@ -219,7 +221,7 @@
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         height: 1px;
-        background-color: #000000;
+        background-color: #000;
         -webkit-transition: width .3s ease-in-out;
         -o-transition: width .3s ease-in-out;
         transition: width .3s ease-in-out; }
@@ -235,7 +237,7 @@
     padding-top: 4px;
     text-align: right; }
   .contacts__email {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     position: relative; }
     .contacts__email:after {
@@ -249,7 +251,7 @@
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       height: 1px;
-      background-color: #000000;
+      background-color: #000;
       -webkit-transition: width .3s ease-in-out;
       -o-transition: width .3s ease-in-out;
       transition: width .3s ease-in-out; }
