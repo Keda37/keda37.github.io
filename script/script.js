@@ -25,3 +25,13 @@ anchors.forEach(function(item) {
     doScrolling(coordY, 700);    
   });
 });
+
+
+
+var root = document.documentElement;
+var themeBtns = document.getElementsByClassName('js-button-theme')[0];
+
+themeBtns.addEventListener("click" , function() {
+  root.classList.toggle('dark-theme');
+});
+
