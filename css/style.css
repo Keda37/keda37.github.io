@@ -101,7 +101,7 @@ body {
       position: absolute;
       width: 16px;
       height: 16px;
-      background-color: #adb5bd;
+      background: url("../image/ic_refresh_24px.svg") center no-repeat;
       border-radius: 100%;
       left: 3px;
       top: 0; }
