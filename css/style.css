@@ -57,18 +57,22 @@
     height: 65px;
     display: block;
     margin-right: 30px;
-    border-radius: 30%;
     background-color: var(--primary-color);
     cursor: pointer;
-    -webkit-transition: -webkit-transform 0.3s ease-in-out;
-    transition: -webkit-transform 0.3s ease-in-out;
-    -o-transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+    -webkit-transition: -webkit-transform .5s ease-in-out;
+    transition: -webkit-transform .5s ease-in-out;
+    -o-transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out;
+    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out; }
     .info__logo:hover {
-      -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg); }
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+    .info__logo-img {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      -o-object-fit: cover;
+      object-fit: cover; }
   .info__name {
     font-size: 24px;
     font-weight: 500;
