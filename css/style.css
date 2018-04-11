@@ -3,6 +3,114 @@ body {
   font-size: 18px;
   font-weight: 300;
   line-height: 1;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000; }
+
+.info {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 52px; }
+  .info__name {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0; }
+
+.navbar {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .navbar__item {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #adb5bd;
+    position: relative;
+    padding-bottom: 19px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    display: block; }
+    .navbar__item:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 3px;
+      background-color: #adb5bd; }
+    .navbar__item--active, .navbar__item--link {
+      color: #000000; }
+      .navbar__item--active:after, .navbar__item--link:after {
+        background-color: #000000; }
+    .navbar__item--work, .navbar__item--capability {
+      width: 275px; }
+    .navbar__item--contacts {
+      width: 170px; }
+
+.about {
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px; }
+  .about__date {
+    width: 380px; }
+    .about__date-number {
+      font-size: 288px;
+      text-align: center;
+      font-weight: bold;
+      line-height: .76; }
+    .about__date-text {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 86px; }
+  .about__info {
+    width: 800px;
+    margin-left: auto; }
+  .about__title {
+    margin: 0;
+    font-size: 42px;
+    font-weight: 500;
+    line-height: 1.33; }
+  .about__today-number {
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 85px;
+    position: relative;
+    padding-left: 35px; }
+    .about__today-number:before {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      background-color: #adb5bd;
+      border-radius: 100%;
+      left: 3px;
+      top: 0; }
+
+.work {
+  margin-top: 153px;
+  max-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
 
 /*# sourceMappingURL=style.css.map */
