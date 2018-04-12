@@ -57,14 +57,8 @@
     height: 65px;
     display: block;
     margin-right: 30px;
-    background-color: var(--primary-color);
-    cursor: pointer;
-    -webkit-transition: -webkit-transform .5s ease-in-out;
-    transition: -webkit-transform .5s ease-in-out;
-    -o-transition: transform .5s ease-in-out;
-    transition: transform .5s ease-in-out;
-    transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out; }
-    .info__logo:hover {
+    cursor: pointer; }
+    .info__logo:hover .info__logo-img {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg); }
     .info__logo-img {
@@ -72,7 +66,14 @@
       width: 100%;
       height: auto;
       -o-object-fit: cover;
-      object-fit: cover; }
+      object-fit: cover;
+      -webkit-transition: -webkit-transform .5s ease-in-out;
+      transition: -webkit-transform .5s ease-in-out;
+      -o-transition: transform .5s ease-in-out;
+      transition: transform .5s ease-in-out;
+      transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+      background-color: var(--primary-color);
+      display: block; }
   .info__name {
     font-size: 24px;
     font-weight: 500;
