@@ -204,15 +204,22 @@
     margin-right: 73px;
     margin-bottom: 84px;
     text-decoration: none; }
+    .work__item:hover .work__item-img {
+      -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+      transform: translateY(-5px); }
     .work__item-img {
       display: block;
       width: 100%;
       height: 275px;
       border-radius: 100%;
-      background: var(--primary-color);
+      -webkit-transition: -webkit-transform 0.3s ease-in-out;
+      transition: -webkit-transform 0.3s ease-in-out;
+      -o-transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
       margin-left: auto; }
     .work__item-text {
-      max-width: 150px;
       text-align: center;
       font-size: 18px;
       font-weight: 300;
