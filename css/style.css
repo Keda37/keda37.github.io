@@ -319,4 +319,20 @@
     .contacts__email:hover:after {
       width: 100%; }
 
+.github-corner {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  color: var(--background-color);
+  fill: var(--primary-color);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .github-corner svg {
+    width: 80px;
+    height: 80px; }
+
 /*# sourceMappingURL=style.css.map */
