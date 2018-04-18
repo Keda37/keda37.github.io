@@ -1,4 +1,5 @@
-function doScrolling(elementY, duration) { 
+"use strict";
+function doScrolling(elementY, duration) {
   var startingY = window.pageYOffset;
   var diff = elementY - startingY;
   var start;
@@ -18,20 +19,12 @@ function doScrolling(elementY, duration) {
 var anchors = [].slice.call(document.querySelectorAll('a[href*="#"]'));
 
 anchors.forEach(function(item) {
-  item.addEventListener('click', function(e) {
+  item.addEventListener("click", function(e) {
     e.preventDefault();
-    var coordY = document.querySelector(item.getAttribute('href')).getBoundingClientRect().top;
-    
-    doScrolling(coordY, 700);    
+    var coordY = document
+      .querySelector(item.getAttribute("href"))
+      .getBoundingClientRect().top;
+
+    doScrolling(coordY, 700);
   });
 });
-
-
-
-var root = document.documentElement;
-var themeBtns = document.getElementsByClassName('js-button-theme')[0];
-
-themeBtns.addEventListener("click" , function() {
-  root.classList.toggle('dark-theme');
-});
-

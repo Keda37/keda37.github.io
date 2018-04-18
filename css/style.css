@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700");
-:root {
-  --background-color: #f8f9fa;
-  --primary-color: #000;
-  --navbar-color: #adb5bd;
-  --svg-color: #adb5bd; }
-
-:root.dark-theme {
-  --background-color: #242628;
-  --primary-color: #fff;
-  --navbar-color: #000;
-  --svg-color: #000; }
-
 .body {
   font-size: 18px;
   font-weight: 300;
@@ -18,8 +6,8 @@
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  color: var(--primary-color);
-  background-color: var(--background-color);
+  color: #000;
+  background-color: #f8f9fa;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: auto;
   position: relative;
@@ -57,7 +45,7 @@
     height: 65px;
     display: block;
     margin-right: 30px;
-    cursor: pointer; }
+    cursor: default; }
     .info__logo:hover .info__logo-img {
       -webkit-transform: rotateY(180deg);
       transform: rotateY(180deg); }
@@ -72,8 +60,9 @@
       -o-transition: transform .5s ease-in-out;
       transition: transform .5s ease-in-out;
       transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
-      background-color: var(--primary-color);
-      display: block; }
+      background-color: #000;
+      display: block;
+      border-radius: 100%; }
   .info__name {
     font-size: 24px;
     font-weight: 500;
@@ -95,7 +84,7 @@
     font-size: 18px;
     font-weight: 300;
     text-decoration: none;
-    color: var(--navbar-color);
+    color: #adb5bd;
     position: relative;
     padding-bottom: 19px;
     -webkit-box-flex: 0;
@@ -113,14 +102,14 @@
       width: 100%;
       bottom: 0;
       height: 3px;
-      background-color: var(--navbar-color);
+      background-color: #adb5bd;
       -webkit-transition: all .3s ease-in-out;
       -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out; }
     .navbar__item--active, .navbar__item--link {
-      color: var(--primary-color); }
+      color: #000; }
       .navbar__item--active:after, .navbar__item--link:after {
-        background-color: var(--primary-color); }
+        background-color: #000; }
     .navbar__item--work, .navbar__item--capability {
       width: 275px; }
     .navbar__item--contacts {
@@ -172,7 +161,7 @@
     .about__change-icon svg {
       width: 16px;
       height: 16px;
-      fill: var(--svg-color);
+      fill: #adb5bd;
       display: block;
       -webkit-transition: fill 0.3s ease-in-out;
       -o-transition: fill 0.3s ease-in-out;
@@ -228,7 +217,7 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 42px;
-      color: var(--primary-color); }
+      color: #000; }
 
 .capability {
   max-width: 1220px;
@@ -276,7 +265,7 @@
       text-decoration: none;
       font-size: 18px;
       font-weight: 300;
-      color: var(--primary-color);
+      color: #000;
       margin-right: 40px;
       position: relative; }
       .contacts__social-item:after {
@@ -290,7 +279,7 @@
         -ms-transform: translateX(-50%);
         transform: translateX(-50%);
         height: 1px;
-        background-color: var(--primary-color);
+        background-color: #000;
         -webkit-transition: width .3s ease-in-out;
         -o-transition: width .3s ease-in-out;
         transition: width .3s ease-in-out; }
@@ -306,7 +295,7 @@
     padding-top: 4px;
     text-align: right; }
   .contacts__email {
-    color: var(--primary-color);
+    color: #000;
     text-decoration: none;
     position: relative; }
     .contacts__email:after {
@@ -320,7 +309,7 @@
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       height: 1px;
-      background-color: var(--primary-color);
+      background-color: #000;
       -webkit-transition: width .3s ease-in-out;
       -o-transition: width .3s ease-in-out;
       transition: width .3s ease-in-out; }
@@ -334,8 +323,8 @@
   right: 0;
   width: 80px;
   height: 80px;
-  color: var(--background-color);
-  fill: var(--primary-color);
+  color: #f8f9fa;
+  fill: #000;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
